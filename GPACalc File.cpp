@@ -2,15 +2,16 @@
 using namespace std;
 
 int main() {
-    bool A, B, C, D, F, total_points, GPA;
+    double A, B, C, D, F, total_points, GPA;
     int class_amount;
     string classtype, grade;
-    cin >> classtype;
-    cin >> grade;
+    cin >> class_amount;
     //GPA Calculation
     for (int i = 0; i < class_amount; i++) {
+        cin >> classtype;
+        cin >> grade;
         if (classtype == "AP") {
-            map <string, bool> APG;
+            map <string, double> APG;
             APG["A"] = 5.0;
             APG["B"] = 4.0; 
             APG["C"] = 3.0;
@@ -19,7 +20,7 @@ int main() {
             total_points += APG[grade];
         }
         if (classtype == "Honors") {
-           map <string, bool> HG;
+           map <string, double> HG;
             HG["A"] = 4.5;
             HG["B"] = 3.5; 
             HG["C"] = 2.5;
@@ -28,7 +29,7 @@ int main() {
             total_points += HG[grade];
         }
         if (classtype == "Normal") {
-            map <string, bool> NG;
+            map <string, double> NG;
             NG["A"] = 5.0;
             NG["B"] = 4.0; 
             NG["C"] = 3.0;
