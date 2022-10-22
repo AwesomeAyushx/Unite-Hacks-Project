@@ -1,0 +1,12 @@
+{
+    classes: [
+        class1: {
+            type: honors,
+            grade: C
+        },
+        class1: {
+            type: honors,
+            grade: C
+        },s
+    ]
+}
