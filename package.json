@@ -4,7 +4,7 @@
   "description": "Unite Hacks Project",
   "main": "index.js",
   "scripts": {
-    "update": "npm i express nodemon && git reset --hard && git pull https://github.com/AwesomeAyushx/Unite-Hacks-Project",
+    "update": "npm i && git reset --hard && git pull https://github.com/AwesomeAyushx/Unite-Hacks-Project",
     "start": "npx nodemon index.js"
   },
   "repository": {
