@@ -34,6 +34,9 @@ app.get('/', (req, res) => {
 app.get('/classes', (req, res) => {
   res.render('ClassPage.ejs');
 })
+app.get('/home', (req, res) => {
+  res.render('HomePage.ejs');
+})
 
 app.listen(port, () => {
   console.log(`Node App listening on port ${port}`)
