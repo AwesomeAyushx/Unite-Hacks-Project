@@ -1,0 +1,8 @@
+h1 {
+    color: green;
+}
+.navBar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+}
