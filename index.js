@@ -11,12 +11,16 @@ app.use(express.static('public'))
 data = {
   classes:{
     class1: {
-      type : "honors",
+      type : "Honors",
       grade: "C"
     },
     class2: {
       type : "AP",
       grade: "A"
+    },
+    class3: {
+      type : "Normal",
+      grade: "F"
     },
   }
 }

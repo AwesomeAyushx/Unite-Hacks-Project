@@ -8,7 +8,6 @@
       type : "AP",
       grade: "A"
     },
-  },
     class3: {
       type : "Normal",
       grade: "F"
