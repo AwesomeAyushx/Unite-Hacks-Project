@@ -2,6 +2,7 @@
 
 body {
     background-color: aqua;
+    padding: 0;
     margin: 0;
     font-family: Roboto;
 }
@@ -15,21 +16,30 @@ body {
 }
 .homePage {
     display: flex;
+    flex-direction: row;
+    border: 1px solid green;
     justify-content: center;
-    border: 1px solid blue;
+    flex-wrap: wrap;
 }
 .class-button {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column; 
-    
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border: 1px solid green;
+    width: calc(10rem + 10vw);
 }
 .class-text {
-    font-size: calc(1rem + 1.2vw);
-    border: 1px solid blue;
+    border: 1px solid green;
 }
 .class-image {
-    border: 1px solid blue;
+    border: 1px solid green;
+}
+
+img {
     width: 100%;
 }
 /*for class button and class image it needs to be variable that I can set*/
+/*     font-size: calc(.1rem + 1.2vw); */
