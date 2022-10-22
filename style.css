@@ -41,5 +41,9 @@ body {
 img {
     width: 100%;
 }
+.ClassPage {
+    display: flex;
+    flex-direction: column;
+}
 /*for class button and class image it needs to be variable that I can set*/
 /*     font-size: calc(.1rem + 1.2vw); */
