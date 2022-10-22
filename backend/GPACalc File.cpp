@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    double A, B, C, D, F, total_points, GPA;
+    double total_points, GPA;
     int class_amount;
     string classtype, grade;
     cin >> class_amount;
@@ -40,4 +40,5 @@ int main() {
     }
     GPA = total_points/class_amount;
     cout << GPA;
+    return 0;
 }
