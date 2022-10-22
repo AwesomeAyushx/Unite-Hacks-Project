@@ -1,12 +1,17 @@
 {
-    classes: [
-        class1: {
-            type: honors,
-            grade: C
-        },
-        class1: {
-            type: honors,
-            grade: C
-        },s
-    ]
+  classes:{
+    class1: {
+      type : "Honors",
+      grade: "C"
+    },
+    class2: {
+      type : "AP",
+      grade: "A"
+    },
+  },
+    class3: {
+      type : "Normal",
+      grade: "F"
+    },
+  }
 }
