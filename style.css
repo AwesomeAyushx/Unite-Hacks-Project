@@ -3,9 +3,7 @@
 body {
     background-color: aqua;
     margin: 0;
-}
-h1 {
-    color: green;
+    font-family: Roboto;
 }
 .navBar {
     display: flex;
@@ -15,13 +13,23 @@ h1 {
     background-color: white;
     color: blue;
 }
-.Homepage {
+.homePage {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-
+    border: 1px solid blue;
 }
-
-p,h1,h2 {
-    font-family: Roboto;
+.class-button {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    
 }
+.class-text {
+    font-size: calc(1rem + 1.2vw);
+    border: 1px solid blue;
+}
+.class-image {
+    border: 1px solid blue;
+    width: 100%;
+}
+/*for class button and class image it needs to be variable that I can set*/
