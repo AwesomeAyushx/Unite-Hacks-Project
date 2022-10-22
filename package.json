@@ -4,7 +4,7 @@
   "description": "Unite Hacks Project",
   "main": "index.js",
   "scripts": {
-    "test": "npm i express && git pull https://github.com/AwesomeAyushx/Unite-Hacks-Project && node index.js"
+    "test": "npm i express nodemon && git reset --hard && git pull https://github.com/AwesomeAyushx/Unite-Hacks-Project"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AwesomeAyushx/Unite-Hacks-Project#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
   }
 }
