@@ -1,5 +1,4 @@
-{
-  classes:{
+ {
     class1: {
       type : "Honors",
       grade: "C"
@@ -12,5 +11,4 @@
       type : "Normal",
       grade: "F"
     },
-  }
 }

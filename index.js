@@ -1,6 +1,7 @@
 const express = require('express')
 const fs =require('fs')
 const app = express()
+app.set('view engine', 'ejs');
 const port = 3000
 app.use(express.static('public'))
 /*fs.readFileSync('communications.txt', (err, data) => {
@@ -9,7 +10,6 @@ app.use(express.static('public'))
   console.log(data.toString());
 })*/
 data = {
-  classes:{
     class1: {
       type : "Honors",
       grade: "C"
@@ -22,7 +22,6 @@ data = {
       type : "Normal",
       grade: "F"
     },
-  }
 }
 /*
 fs.writeFile('communications.txt', JSON.stringify(data), (err) => {
@@ -31,6 +30,9 @@ fs.writeFile('communications.txt', JSON.stringify(data), (err) => {
 console.log(JSON.stringify(data))
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+app.get('/classes', (req, res) => {
+  res.render('ClassPage.ejs');
 })
 
 app.listen(port, () => {
