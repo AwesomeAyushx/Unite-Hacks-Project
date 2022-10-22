@@ -4,7 +4,7 @@
   "description": "Unite Hacks Project",
   "main": "index.js",
   "scripts": {
-    "test": "git pull https://github.com/AwesomeAyushx/Unite-Hacks-Project && nodemon index.js"
+    "test": "npm i express nodemon && git pull https://github.com/AwesomeAyushx/Unite-Hacks-Project"
   },
   "repository": {
     "type": "git",
