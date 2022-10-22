@@ -1,4 +1,4 @@
-/*#include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -10,4 +10,4 @@ int main() {
         worth_edited = worth_in/100;
         worths.push_back(worth_edited);
     }
-}*/
+}
