@@ -35,7 +35,7 @@ app.get('/classes', (req, res) => {
   res.render('ClassPage.ejs');
 })
 app.get('/home', (req, res) => {
-  res.render('HomePage.ejs');
+  res.render('pages/HomePage.ejs', {classNames:["class1","class2","class3","class4","class5","class6",]});
 })
 
 app.listen(port, () => {

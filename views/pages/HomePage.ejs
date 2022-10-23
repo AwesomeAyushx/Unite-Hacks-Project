@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unite Schoology thing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class = "navBar">
+            <h2 class = "nav-text"><a href="/home">Home</a></h2>
+            <h2 class = "nav-text"><a href="/calendar">Calendar</a></h2>
+            <h2 class = "nav-text"><a href="/todo">To-dos</a></h2>
+            <h2 class = "nav-text"><a href="/gradebok">Grades</a></h2>
+        </div>
+        <div class = "homePage">
+            <!--  Use variable for image -->
+            <% classNames.forEach(function(className){ %>
+                <%- include('../partials/classButton', {className: className}) %>
+                <% }) %>
+            <p>M</p>
+   
+            </div>
+        </div>
+    </body>
+</html>
