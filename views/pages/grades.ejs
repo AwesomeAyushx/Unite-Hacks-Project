@@ -14,7 +14,9 @@
             <h2 class = "nav-text"><a href="/todo">To-dos</a></h2>
             <h2 class = "nav-text"><a href="/gradebok">Grades</a></h2>
         </div class = "gradePage">
-
+        <% grades.forEach(function(tuple){ %>
+        <%- include('../partials/gradeClass', {className: tuple.className, grade: tuple.grade}) %>
+        <% }) %>
         </div>
     </body>
 </html>

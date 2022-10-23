@@ -69,7 +69,12 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.get('/grades', (req, res) => {
-  res.render('pages/grades.ejs');
+  a = fs.readFileSync('class1.json', (err, data) => {
+    if (err) throw err;
+  
+    return(data.toString());
+  })
+  res.render('pages/grades.ejs',[{class:'class1', grade: gradeCalc(a)}]);
 })
 app.get('/class', (req, res) => {
   res.render('pages/ClassPage.ejs');
