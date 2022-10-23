@@ -9,20 +9,6 @@ app.use(express.static('public'))
 
   console.log(data.toString());
 })*/
-data = {
-    class1: {
-      type : "Honors",
-      grade: "C"
-    },
-    class2: {
-      type : "AP",
-      grade: "A"
-    },
-    class3: {
-      type : "Normal",
-      grade: "F"
-    },
-}
 /*
 fs.writeFile('communications.txt', JSON.stringify(data), (err) => {
   if (err) throw err;
@@ -64,36 +50,14 @@ function gpa(classes){
     GPA = total_points/classes;
     return GPA
   }
-  function gradeCalc(point_earned, points_total){
-    var average_total = (point_earned/points_total)*100
-    if (average_total >= 90) {
-        return ("A")
-    }
-    else if (average_total >= 80 && average_total < 90) {
-        return ("B")
-    }
-    else if (average_total >= 70 && average_total < 80) {
-        return ("C")
-    }
-    else if (average_total >= 60 && average_total < 70) {
-        return ("D")
-    }
-    else {
-        return ("F")
-    }
-}
 
-console.log(JSON.stringify(data))
+
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.get('/grades', (req, res) => {
-  a = fs.readFileSync('class1.json', (err, data) => {
-    if (err) throw err;
-  
-    return(data.toString());
-  })
-  res.render('pages/grades.ejs',[{class:'class1', grade: gradeCalc(a)}]);
+    res.render('pages/grades.ejs',{grades:[{className:'class1', grade: "F"}]});
 })
 app.get('/class', (req, res) => {
   res.render('pages/ClassPage.ejs');
@@ -104,6 +68,8 @@ app.get('/login', (req, res) => {
 app.get('/home', (req, res) => {
   res.render('pages/HomePage.ejs', {classNames:["class1","class2","class3","class4","class5","class6",]});
 })
+app.get('/todo', (req, res) => {
+  res.render('pages/Todo.ejs')})
 
 app.listen(port, () => {
   console.log(`Node App listening on port ${port}`)
