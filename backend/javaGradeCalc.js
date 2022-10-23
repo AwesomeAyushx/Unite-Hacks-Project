@@ -10,4 +10,18 @@ for (var i = 0; i < categoryworth.length; i++) {
     complete_total += average;
 }
 average_total = (complete_total)*50;
-console.log(average_total);
+if (average_total >= 90) {
+    console.log("A")
+}
+else if (average_total >= 80 && average_total < 90) {
+    console.log("B")
+}
+else if (average_total >= 70 && average_total < 80) {
+    console.log("C")
+}
+else if (average_total >= 60 && average_total < 70) {
+    console.log("D")
+}
+else {
+    console.log("F")
+}
