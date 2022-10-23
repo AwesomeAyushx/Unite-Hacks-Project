@@ -6,14 +6,13 @@ const port = 3000
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  var image1= 
   res.send('Hello World!')
 })
 app.get('/classes', (req, res) => {
   res.render('pages/ClassPage.ejs');
 })
 app.get('/home', (req, res) => {
-  res.render('pages/HomePage.ejs', {classNames:["class1.jpg","class2.jpg","class3.jpg","class4.jpg","class5.jpg","class6.jpg",]});
+  res.render('pages/HomePage.ejs', {classNames:["class1","class2","class3","class4","class5","class6",]});
 })
 
 app.listen(port, () => {
