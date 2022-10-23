@@ -31,8 +31,11 @@ console.log(JSON.stringify(data))
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-app.get('/classes', (req, res) => {
-  res.render('ClassPage.ejs');
+app.get('/class', (req, res) => {
+  res.render('pages/ClassPage.ejs');
+})
+app.get('/login', (req, res) => {
+  res.render('pages/Login.ejs');
 })
 app.get('/home', (req, res) => {
   res.render('pages/HomePage.ejs', {classNames:["class1","class2","class3","class4","class5","class6",]});
