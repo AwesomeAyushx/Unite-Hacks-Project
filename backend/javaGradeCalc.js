@@ -1,3 +1,4 @@
+function gradeCalc(){
 var complete_total = 0, average_total = 0, total = 0;
 const categoryworth = [0.3, 0.4, 0.3];
 for (var i = 0; i < categoryworth.length; i++) {
@@ -11,17 +12,18 @@ for (var i = 0; i < categoryworth.length; i++) {
 }
 average_total = (complete_total)*50;
 if (average_total >= 90) {
-    console.log("A")
+    return("A")
 }
 else if (average_total >= 80 && average_total < 90) {
-    console.log("B")
+    return("B")
 }
 else if (average_total >= 70 && average_total < 80) {
-    console.log("C")
+    return("C")
 }
 else if (average_total >= 60 && average_total < 70) {
-    console.log("D")
+    return("D")
 }
 else {
-    console.log("F")
+    return("F")
+}
 }

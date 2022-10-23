@@ -28,7 +28,7 @@ fs.writeFile('communications.txt', JSON.stringify(data), (err) => {
   if (err) throw err;
 })*/
 
-function gpa(classes)
+function gpa(classes){
     for (var i = 0; i < classes.length; i++) {
         if (classes[i].type == "AP") {
             const APG = new Map([
@@ -63,6 +63,7 @@ function gpa(classes)
     }
     GPA = total_points/classes;
     return GPA
+  }
 console.log(JSON.stringify(data))
 app.get('/', (req, res) => {
   res.send('Hello World!')
