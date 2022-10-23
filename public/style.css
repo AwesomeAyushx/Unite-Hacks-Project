@@ -61,6 +61,7 @@ img {
 .loginPage {
   display: flex;
   flex-direction: column;
+  background-color: #d7d8f9
 }
 form {
   display: flex;
