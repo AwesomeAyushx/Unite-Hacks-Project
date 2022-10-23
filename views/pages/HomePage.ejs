@@ -16,12 +16,19 @@
         </div>
         <div class = "homePage">
             <!--  Use variable for image -->
+<<<<<<< Updated upstream:views/HomePage.ejs
             <%- include('partials/classButton') %>
             <%- include('partials/classButton') %>
             <%- include('partials/classButton') %>
             <%- include('partials/classButton') %>
             <%- include('partials/classButton') %>
             <%- include('partials/classButton') %>
+=======
+            <% classNames.forEach(function(className){ %>
+                <%- include('../partials/classButton', {className: className}) %>
+                <% }) %>
+            <p>M</p>
+>>>>>>> Stashed changes:views/pages/HomePage.ejs
    
             </div>
         </div>

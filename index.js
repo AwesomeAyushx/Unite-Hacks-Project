@@ -4,39 +4,16 @@ const app = express()
 app.set('view engine', 'ejs');
 const port = 3000
 app.use(express.static('public'))
-/*fs.readFileSync('communications.txt', (err, data) => {
-  if (err) throw err;
 
-  console.log(data.toString());
-})*/
-data = {
-    class1: {
-      type : "Honors",
-      grade: "C"
-    },
-    class2: {
-      type : "AP",
-      grade: "A"
-    },
-    class3: {
-      type : "Normal",
-      grade: "F"
-    },
-}
-/*
-fs.writeFile('communications.txt', JSON.stringify(data), (err) => {
-  if (err) throw err;
-})*/
-console.log(JSON.stringify(data))
 app.get('/', (req, res) => {
   var image1= 
   res.send('Hello World!')
 })
 app.get('/classes', (req, res) => {
-  res.render('ClassPage.ejs');
+  res.render('pages/ClassPage.ejs');
 })
 app.get('/home', (req, res) => {
-  res.render('HomePage.ejs');
+  res.render('pages/HomePage.ejs', {classNames:["class1.jpg","class2.jpg","class3.jpg","class4.jpg","class5.jpg","class6.jpg",]});
 })
 
 app.listen(port, () => {
