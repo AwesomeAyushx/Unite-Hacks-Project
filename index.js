@@ -29,7 +29,6 @@ fs.writeFile('communications.txt', JSON.stringify(data), (err) => {
 })*/
 console.log(JSON.stringify(data))
 app.get('/', (req, res) => {
-  var image1= 
   res.send('Hello World!')
 })
 app.get('/classes', (req, res) => {
