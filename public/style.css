@@ -82,6 +82,17 @@ form {
     color: green;
     gap: 50px;
 }
+.Assignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-family: Roboto;
+  margin: 5%;
+  gap: 100px;
+ background-color: #d7d8f9;
+  color: blue;
+}
 
 /*for class button and class image it needs to be variable that I can set*/
 /*     font-size: calc(.1rem + 1.2vw); */
