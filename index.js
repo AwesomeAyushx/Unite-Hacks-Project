@@ -70,7 +70,8 @@ app.get('/home', (req, res) => {
 })
 app.get('/todo', (req, res) => {
   res.render('pages/Todo.ejs')})
-
+  app.get('/calendar', (req, res) => {
+    res.render('pages/calendar.ejs')})
 app.listen(port, () => {
   console.log(`Node App listening on port ${port}`)
 })
