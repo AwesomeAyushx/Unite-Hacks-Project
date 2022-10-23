@@ -14,15 +14,27 @@
             <h2 class = "nav-text"><a href="">To-dos</a></h2>
             <h2 class = "nav-text"><a href="">Grades</a></h2>
         </div>
-        <div class = "homePage">
+        <div class = "loginPage">
             <div class = "loginbox">
-                <p>Input your username here</p>
-                <div class = "logintypethingy">
-                    <label for="Name">Name:</label>
-                </div>
-            </div>
+                <h2>Input your username here</h2>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            </div>
-        </div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      </div>
+
     </body>
 </html>
